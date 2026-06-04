@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f4f6f8;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Form */
+
+.note-form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.note-form h2 {
+  margin-bottom: 15px;
+}
+
+.note-form input,
+.note-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.note-form textarea {
+  resize: none;
+  height: 120px;
+}
+
+.note-form button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.note-form button:hover {
+  background: #1d4ed8;
+}
+
+/* Notes List */
+
+.notes-list {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-height: 500px;
+  overflow-y: auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.note-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.note-card h3 {
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.note-card p {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.view-btn,
+.edit-btn,
+.delete-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.view-btn {
+  background: #16a34a;
+}
+
+.edit-btn {
+  background: #f59e0b;
+}
+
+.delete-btn {
+  background: #dc2626;
+}
+
+/* Details */
+
+.note-details {
+  margin-top: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.note-details h2 {
+  margin-bottom: 15px;
+}
+
+.note-details p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.note-details small {
+  color: gray;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
